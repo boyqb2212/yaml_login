@@ -13,18 +13,16 @@ try:
 	message = mysocket.recv(1024)
 	print("Message received from the server", message)
 	while True:
-		message = input("Enter your message > ")
-		mysocket.send(bytes(message.encode('utf-8')))
-		if message== "quit":
+		mess = input("Enter your message > ")
+		mysocket.send(bytes(mess.encode('utf-8')))
+		server_message = mysocket.recv(1024)
+		yamllogger.logger2.info("[*] Received request : '{}' from server".format(server_message.decode()))
+
+		if mess == "quit":
 			yamllogger.logger2.info("END CONNECTION")
 			break
-		if message== "chui bay":
-			yamllogger.logger2.warning("FPI WARNING")
-
-		if message== "noi tuc":
-			yamllogger.logger2.warning("FPI WARNING")
 
 except :
-	yamllogger.logger2.error("Can't connect ")
+	yamllogger.logger2.error("Connect false")
 finally:
 	mysocket.close()
