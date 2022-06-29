@@ -1,0 +1,21 @@
+2022-06-29 21:34:01,141 INFO client [*] Accepted connection from: 127.0.0.1:57352
+2022-06-29 21:34:04,533 INFO server [*] Received request : b'hello' from client ('127.0.0.1', 57352)
+2022-06-29 21:34:07,159 INFO client END CONNECTION
+2022-06-29 21:34:07,159 INFO server [*] Received request : b'quit' from client ('127.0.0.1', 57352)
+2022-06-29 21:35:19,584 INFO client Connected to host 127.0.0.1 in port: 9993
+2022-06-29 21:35:22,798 INFO server [*] Received request : b'hello' from client ('127.0.0.1', 57353)
+2022-06-29 21:35:24,988 INFO server [*] Received request : b'quit' from client ('127.0.0.1', 57353)
+2022-06-29 21:35:24,988 INFO client END CONNECTION
+2022-06-29 21:36:54,157 INFO client Connected to host 127.0.0.1 in port: 9993
+2022-06-29 21:36:57,096 INFO server [*] Received request : b'hello' from client ('127.0.0.1', 57357)
+2022-06-29 21:37:03,409 ERROR client Can't connect 
+2022-06-29 21:37:08,829 ERROR client Can't connect 
+2022-06-29 21:41:26,067 INFO client Connected to host 127.0.0.1 in port: 9993
+2022-06-29 21:41:28,823 INFO server [*] Received request : b'hello' from client ('127.0.0.1', 57366)
+2022-06-29 21:41:32,180 WARNING client END CONNECTION
+2022-06-29 21:41:32,181 INFO server [*] Received request : b'noi tuc' from client ('127.0.0.1', 57366)
+2022-06-29 21:42:24,220 ERROR client Can't connect 
+2022-06-29 21:42:30,696 INFO client Connected to host 127.0.0.1 in port: 9993
+2022-06-29 21:42:32,889 INFO server [*] Received request : b'hello' from client ('127.0.0.1', 57374)
+2022-06-29 21:42:36,428 WARNING client FPI WARNING
+uest : b'noi tuc' from client ('127.0.0.1', 57374)
