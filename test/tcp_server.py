@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+from pydoc import cli
 import socket
 import threading
 import yamllogger
@@ -24,10 +25,12 @@ print("[*] Accepted connection from: %s:%d" % (addr[0],addr[1]))
 
 def handle_client(client_socket):
     request = client_socket.recv(1024)
-    print(type(request))
-    # print("==="+client_socket.getpeername())
+    #print(type(request))
+    #print("==="+client_socket.getpeername())
     yamllogger.logger1.info("[*] Received request : {} from client {}".format( request, client_socket.getpeername()) )
-    client_socket.send(bytes("ACK","utf-8"))
+    #client_socket.send(bytes("ACK","utf-8"))
+    data = input("Message to client: ")
+    client_socket.sendall(data.encode())
 
 while True:
     handle_client(client)
